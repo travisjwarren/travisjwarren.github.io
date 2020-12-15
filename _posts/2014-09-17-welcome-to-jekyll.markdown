@@ -6,7 +6,7 @@ categories: dribbledrive release
 ---
 Time has come to bite the bullet!  Shipping is the current vibe.
 
-A live scoring feature in form of scoring drills has surfaced after a period of significant refactoring and learning.
+A live scoring feature in the form of scoring drills (1 / 2/ 3 hits and misses) has surfaced after a period of significant refactoring and learning.
 
 Overriding feeling is...it's time.
 
