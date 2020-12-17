@@ -12,6 +12,4 @@ Overriding feeling is...it's time.
 
 I will give it a test drive at Villa training tomorrow night to see what type of data set I get pull out of it.
 
-For those looking for a play, heres a link that should give you an idea of where we are going.
-
-https://staging.d12zg4vx914t91.amplifyapp.com/shooting
+For those looking for a play, heres a link that should give you an idea of where we are going.  [Shooting Drill](https://staging.d12zg4vx914t91.amplifyapp.com/shooting)
