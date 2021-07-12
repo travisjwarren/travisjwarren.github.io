@@ -18,6 +18,8 @@ Being an old web type person, I’ve been more inclined to think pages. Moving t
 
 `Motion helps orient users by showing how elements in a transition are related.`
 
-Motion and transition become the glue that binds your site together. A study of both concepts will pay off for you and your site especially in relation to mobile first experiences.
+Motion and transition become the glue that binds your site together. 
+
+A study of both concepts will pay off for you and your site especially in relation to mobile first experiences.
 
 [Material Design - Understanding Motion](https://material.io/design/motion/understanding-motion.html)
