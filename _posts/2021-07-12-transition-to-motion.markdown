@@ -4,8 +4,6 @@ title:  "Transition to Motion"
 date:   2021-07-13 19:00:00
 categories: UX react material
 ---
-# Transition to Motion
-
 Over the past few weeks I’ve been going back to school on UX design. 
 
 Learning about react in Dribble Drive, I’ve been using material-ui for the front end. It has a vast collection of UI components as building blocks.  Importantly it’s very well documented with a large collection of examples.
