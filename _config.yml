@@ -1,7 +1,7 @@
 # Site settings
 title: CatThree
 description: > # this means to ignore newlines until "baseurl:"
-    using technology to find solutions improving team and individual performance.
+    using technology to find solutions that improve team and individual performance.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://travisjwarren.github.io" # the base hostname & protocol for your site
 twitter_username: travisjwarren
