@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Delivery - Need to practice."
+title:  "Delivery - PER is getting closer."
 date:   2022-06-01 14:54:19
 categories: mvp
 ---
