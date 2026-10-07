@@ -68,7 +68,7 @@
     online.
   built:
     - A Python operations toolkit (boto3) for the AWS Lightsail server and MySQL database, covering provisioning, snapshots and health checks.
-    - Database backups to S3 with lifecycle rules that move older copies to cheaper storage tiers and then delete them.
+    - Backup and restore tooling for the MySQL database, with the managed database's daily automatic backups as the recovery path.
     - Disaster-recovery runbooks and a documented production baseline.
     - Diagnosing and fixing a full-site outage (a 100% full root disk behind CloudFront), with the investigation written up.
   stack: [AWS Lightsail, CloudFront, S3, MySQL, Python, Tiki Wiki]

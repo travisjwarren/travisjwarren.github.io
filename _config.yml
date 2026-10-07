@@ -8,7 +8,7 @@ baseurl: ""
 url: "https://travisjwarren.github.io"
 github_username: travisjwarren
 # Set to the part after linkedin.com/in/ to show a LinkedIn link.
-linkedin_username: ""
+linkedin_username: travisjwarren
 
 # Build settings
 markdown: kramdown

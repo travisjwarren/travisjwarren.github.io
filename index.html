@@ -1,33 +1,49 @@
 ---
 layout: default
 ---
+<header class="intro">
+  <h1 class="name">{{ site.title }}</h1>
+  <p class="role">{{ site.role }}</p>
+  <p class="lede">I build data products for sport, from the scrapers and Postgres schemas through to the pages people read. Two of them are live and used every week: an AFL injury record and power rankings for basketball competitions.</p>
+  {% include links.html %}
+</header>
 
-<div class="home">
-  <h1 class="page-heading">Why?</h1>
-  <p>
-    We think that sport is a pretty worthwhile endeavour. 
-  </p>
-  <p>It involves people striving to be better while pushing themselves to the limit. 
-  </p>
-    When people gather together to do it in a team environment we think that’s even better.
-  </p>
-  <p>
-Through the use of innovative technologies we strive to assist people and teams to unlock their potential to achieve.
-  </p>
-  <h1 class="page-heading">Recent Posts</h1>
+<section aria-labelledby="work-heading">
+  <h2 id="work-heading" class="section-title">Projects</h2>
 
-   <ul class="post-list">
-     {% for post in site.posts %}
-       <li>
-         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  {% for project in site.data.projects %}
+  <article class="project" aria-labelledby="{{ project.name | slugify }}">
+    <h3 id="{{ project.name | slugify }}" class="project-name">{{ project.name }}</h3>
+    <p class="project-summary">{{ project.summary }}</p>
+    <ul class="links project-links">
+      {% for link in project.links %}<li><a href="{{ link.url }}">{{ link.label }}</a></li>{% endfor %}
+    </ul>
 
-         <h2>
-           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-         </h2>
-       </li>
-     {% endfor %}
-   </ul>
+    <table class="stats">
+      <caption class="visually-hidden">{{ project.name }} in numbers</caption>
+      <tbody>
+        {% for stat in project.stats %}
+        <tr><th scope="row">{{ stat.label }}</th><td>{{ stat.value }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
 
-   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <p>{{ project.body }}</p>
 
-</div>
+    <h4>What I built</h4>
+    <ul class="built">
+      {% for item in project.built %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+
+    <h4>Stack</h4>
+    <p class="stack">{{ project.stack | join: ", " }}</p>
+  </article>
+  {% endfor %}
+</section>
+
+<section aria-labelledby="about-heading" class="about">
+  <h2 id="about-heading" class="section-title">How I work</h2>
+  <p>I've led distributed technology teams across regions and time zones, and that shows up in how I build: write things down, make the data trustworthy before making it pretty, and leave a record of why each decision was made.</p>
+  <p>I work with AI coding agents every day. Both InjuryIQ and Power Rankings run their weekly data operations through scripted Claude Code workflows, with dry runs and human review before anything is written to production.</p>
+  <p>I'm looking for full-stack developer roles. The best way to reach me is on LinkedIn.</p>
+</section>
