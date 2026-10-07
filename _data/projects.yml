@@ -30,10 +30,13 @@
       value: "18"
 
 - name: Power Rankings
+  logo: /images/power-rankings-logo.jpg
   summary: Power rankings for basketball, from school competitions to the NBL, with a ranking kept for every round.
   links:
     - label: power-rankings-zeta.vercel.app
       url: https://power-rankings-zeta.vercel.app
+    - label: "@basketball_power_rankings on Instagram"
+      url: https://www.instagram.com/basketball_power_rankings/
   body: >
     Results are collected each week from seven competitions, including the
     AIC, GPS and TAS school leagues, CBSQ tournaments, the U18 SQJBC

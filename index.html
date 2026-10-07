@@ -13,8 +13,13 @@ layout: default
 
   {% for project in site.data.projects %}
   <article class="project" aria-labelledby="{{ project.name | slugify }}">
-    <h3 id="{{ project.name | slugify }}" class="project-name">{{ project.name }}</h3>
-    <p class="project-summary">{{ project.summary }}</p>
+    <div class="project-head{% if project.logo %} has-logo{% endif %}">
+      {% if project.logo %}<img class="project-logo" src="{{ project.logo | prepend: site.baseurl }}" alt="{{ project.name }} logo" width="120" height="120">{% endif %}
+      <div>
+        <h3 id="{{ project.name | slugify }}" class="project-name">{{ project.name }}</h3>
+        <p class="project-summary">{{ project.summary }}</p>
+      </div>
+    </div>
     <ul class="links project-links">
       {% for link in project.links %}<li><a href="{{ link.url }}">{{ link.label }}</a></li>{% endfor %}
     </ul>
