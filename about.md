@@ -10,7 +10,7 @@ AFL injury intelligence — depth over headlines. InjuryIQ is a source-cited rec
 * [InjuryIQ on Substack](https://injuryiq.substack.com)
 
 ## Power Rankings
-ELO-based power rankings for basketball competitions. Raw game results are turned into margin-adjusted, strength-of-schedule weighted ratings, with a ranking snapshot preserved every round so team trajectories can be tracked across a season. Coverage includes school competitions such as AIC, GPS and TAS, CBSQ tournaments, the U18 SQJBC Premier League and the NBL.
+Power rankings for basketball competitions. Raw game results are turned into a rating that weighs up win percentage, average margin, strength of schedule and scoring efficiency, with a ranking snapshot preserved every round so team trajectories can be tracked across a season. Coverage includes school competitions such as AIC, GPS and TAS, CBSQ tournaments, the U18 SQJBC Premier League and the NBL.
 
 * [Power Rankings](https://power-rankings-zeta.vercel.app)
 
