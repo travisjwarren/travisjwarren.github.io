@@ -21,8 +21,8 @@
     - Row-level security on every public table, rate limiting on public endpoints and structured logging throughout.
   stack: [Next.js 16, React 19, TypeScript, Supabase Postgres, Drizzle ORM, Tailwind CSS, Vitest, Python, Vercel]
   stats:
-    - label: Database migrations
-      value: "123"
+    - label: Data rules enforced by Postgres
+      value: "75+"
     - label: Test files
       value: "271"
     - label: Data-integrity audit scripts
