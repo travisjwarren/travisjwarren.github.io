@@ -1,20 +1,20 @@
 ---
 layout: post
 title:  "Release - InjuryIQ and Power Rankings"
-date:   2026-10-07 12:00:00
+date:   2026-10-07 00:30:00
 categories: release
 ---
 It's been a while between posts, but not between builds. Two projects have been taking up the spare hours, and both are now live.
 
-**[Power Rankings](https://power-rankings-zeta.vercel.app)**
+## [Power Rankings](https://power-rankings-zeta.vercel.app)
 
 Back in 2022, tracking the AIC season got me thinking about power ranking functionality. That thought bubble is now a proper application.
 
-Game results feed an ELO rating engine that adjusts for margin of victory and strength of schedule. Every completed round generates a ranking snapshot that is kept, so you can follow how a team's season has moved week to week rather than only seeing where it sits today.
+Game results feed a power rating that weighs up win percentage, average margin, strength of schedule and scoring efficiency. Every completed round generates a ranking snapshot that is kept, so you can follow how a team's season has moved week to week rather than only seeing where it sits today.
 
 Coverage has grown from school basketball (AIC, GPS, TAS and others) to CBSQ tournaments, the U18 SQJBC Premier League and the NBL.
 
-**[InjuryIQ](https://injuryiq.vercel.app)**
+## [InjuryIQ](https://injuryiq.vercel.app)
 
 AFL injury intelligence, built on the idea of depth over headlines.
 
