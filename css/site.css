@@ -84,6 +84,21 @@ a:focus-visible, .skip:focus { outline: 2px solid var(--accent); outline-offset:
 
 .project-summary { margin: 0.5rem 0 0.75rem; font-size: 1.1875rem; }
 
+.project-head.has-logo { display: flex; align-items: flex-start; gap: 1.25rem; }
+
+.project-logo {
+  flex: none;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 0 0 1px var(--rule);
+}
+
+@media (max-width: 26rem) {
+  .project-head.has-logo { gap: 1rem; }
+  .project-logo { width: 4rem; height: 4rem; border-radius: 0.9rem; }
+}
+
 .project-links { margin-bottom: 1.5rem; }
 
 .project h4 {

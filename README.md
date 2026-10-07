@@ -15,11 +15,12 @@ The site is plain [Jekyll](https://jekyllrb.com) published by GitHub Pages. Ther
 | `_includes/head.html` | Meta tags, Open Graph tags, Google Fonts and the stylesheet |
 | `_includes/links.html` | The GitHub and LinkedIn links, used in the intro and the footer |
 | `css/site.css` | All styles, with light and dark colour schemes defined as custom properties on `:root` |
+| `images/` | Project logos referenced from `_data/projects.yml` |
 | `404.html` | The not-found page, which also catches the retired CatThree blog addresses |
 
 ## Editing content
 
-- **Change a project or add one:** edit `_data/projects.yml`. Each entry takes `name`, `summary`, `links`, `body`, `built`, `stack` and `stats`. An odd number of stats is fine, because the last one spans the full row.
+- **Change a project or add one:** edit `_data/projects.yml`. Each entry takes `name`, `summary`, `links`, `body`, `built`, `stack` and `stats`, plus an optional `logo` (a path under `images/`, shown as a rounded square beside the project name; a square image at least 160px wide keeps it sharp). An odd number of stats is fine, because the last one spans the full row.
 - **Change the role line or profile links:** edit `role`, `github_username` or `linkedin_username` in `_config.yml`. Leave `linkedin_username` empty to hide the LinkedIn link.
 - **Stat sheet figures** are a snapshot counted from each project's repository in October 2026. Update them by hand when they drift.
 
