@@ -20,4 +20,4 @@ AFL injury intelligence, built on the idea of depth over headlines.
 
 InjuryIQ keeps a source-cited record of every AFL injury, club and round, classified to OSIICS medical standards. On top of that record sit squad-health comparisons across all 18 clubs, round-by-round matchup health, player durability profiles and analysis of what the injury news actually means. A weekly round wrap goes out on [Substack](https://injuryiq.substack.com).
 
-Both carry on the same theme as Dribble Drive and the game tracker: collect the data well, then use it to tell a better story about the game.
+Both come back to the same idea: collect the data well, then use it to tell a better story about the game.
