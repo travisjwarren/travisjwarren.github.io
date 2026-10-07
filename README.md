@@ -11,11 +11,12 @@ The site is plain [Jekyll](https://jekyllrb.com) published by GitHub Pages. Ther
 | `_config.yml` | Site title, role line, description, and the GitHub and LinkedIn usernames used for the profile links |
 | `_data/projects.yml` | Every project on the page: summary, links, stat sheet, "What I built" list and stack |
 | `index.html` | The home page. It loops over `_data/projects.yml`, so adding a project needs no HTML |
-| `_layouts/default.html` | The page shell: skip link, main content and footer |
-| `_includes/head.html` | Meta tags, Open Graph tags, Google Fonts and the stylesheet |
+| `_layouts/default.html` | The page shell: skip link, top bar (TW mark and section links), main content and footer |
+| `_includes/head.html` | Meta tags, Open Graph tags, Google Fonts, the stylesheet and the site icons |
 | `_includes/links.html` | The GitHub and LinkedIn links, used in the intro and the footer |
 | `css/site.css` | All styles, with light and dark colour schemes defined as custom properties on `:root` |
 | `images/` | Project logos referenced from `_data/projects.yml` |
+| `favicon.ico`, `favicon-32x32.png`, `apple-touch-icon.png` | The TW monogram as the browser-tab and home-screen icon |
 | `404.html` | The not-found page, which also catches the retired CatThree blog addresses |
 
 ## Editing content
