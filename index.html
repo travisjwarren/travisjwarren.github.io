@@ -8,7 +8,7 @@ layout: default
   {% include links.html %}
 </header>
 
-<section aria-labelledby="work-heading">
+<section id="projects" aria-labelledby="work-heading">
   <h2 id="work-heading" class="section-title">Projects</h2>
 
   {% for project in site.data.projects %}
@@ -46,7 +46,7 @@ layout: default
   {% endfor %}
 </section>
 
-<section aria-labelledby="about-heading" class="about">
+<section id="how-i-work" aria-labelledby="about-heading" class="about">
   <h2 id="about-heading" class="section-title">How I work</h2>
   <p>I've led distributed technology teams across regions and time zones, and that shows up in how I build: write things down, make the data trustworthy before making it pretty, and leave a record of why each decision was made.</p>
   <p>I work with AI coding agents every day. Both InjuryIQ and Power Rankings run their weekly data operations through scripted Claude Code workflows, with dry runs and human review before anything is written to production.</p>

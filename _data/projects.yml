@@ -1,6 +1,7 @@
 # Figures were counted from each repository in October 2026.
 
 - name: InjuryIQ
+  logo: /images/injuryiq-logo.png
   summary: AFL injury intelligence. A source-cited record of every AFL injury, club and round, with squad-health comparisons and analysis.
   links:
     - label: injuryiq.vercel.app
@@ -61,6 +62,7 @@
       value: "78"
 
 - name: Demonwiki
+  logo: /images/demonwiki-logo.png
   summary: The history of the Melbourne Football Club, the world's oldest professional sporting club, online since 2009.
   links:
     - label: demonwiki.org

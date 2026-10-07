@@ -49,8 +49,43 @@ a:focus-visible, .skip:focus { outline: 2px solid var(--accent); outline-offset:
 .skip:focus { left: 0.5rem; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
+/* Top bar */
+.topbar { border-top: 4px solid var(--accent); }
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.6rem;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font: 700 1.6rem/1 var(--display);
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+.mark:hover { text-decoration: none; filter: brightness(1.1); }
+
+.topbar .links { font-size: 0.9375rem; }
+.topbar .links a { color: var(--ink); text-decoration: none; }
+.topbar .links a:hover { color: var(--accent); text-decoration: underline; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+section[id] { scroll-margin-top: 1rem; }
+
 /* Intro */
-.intro { padding: 4.5rem 0 3rem; border-bottom: 1px solid var(--rule); }
+.intro { padding: 3rem 0 3rem; border-bottom: 1px solid var(--rule); }
 
 .name {
   margin: 0;
