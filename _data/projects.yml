@@ -1,0 +1,81 @@
+# Figures were counted from each repository in October 2026.
+
+- name: InjuryIQ
+  summary: AFL injury intelligence. A source-cited record of every AFL injury, club and round, with squad-health comparisons and analysis.
+  links:
+    - label: injuryiq.vercel.app
+      url: https://injuryiq.vercel.app
+    - label: Weekly round wrap on Substack
+      url: https://injuryiq.substack.com
+  body: >
+    Every AFL injury is captured daily, classified to the OSIICS medical
+    standard and kept current round by round. On top of that record sit
+    squad-health rankings for all 18 clubs, per-round matchup health,
+    player durability tiers and venue travel load.
+  built:
+    - Rules that must hold everywhere live in Postgres, not in application code. CHECK constraints, partial unique indexes and triggers stop bad data from any write path, such as a player holding two ongoing injuries.
+    - An append-only injury event log, with state columns maintained from it by triggers, so every status change has a recorded source.
+    - A daily ingest pipeline across the Squiggle API, Footywire lineups and club injury lists. New records are written automatically above a confidence threshold, and everything below goes to a review queue.
+    - Read-only audit scripts that check data invariants after every round and fail on any drift.
+    - Row-level security on every public table, rate limiting on public endpoints and structured logging throughout.
+  stack: [Next.js 16, React 19, TypeScript, Supabase Postgres, Drizzle ORM, Tailwind CSS, Vitest, Python, Vercel]
+  stats:
+    - label: Database migrations
+      value: "123"
+    - label: Test files
+      value: "271"
+    - label: Data-integrity audit scripts
+      value: "27"
+    - label: Clubs ranked on squad health
+      value: "18"
+
+- name: Power Rankings
+  summary: Power rankings for basketball, from school competitions to the NBL, with a ranking kept for every round.
+  links:
+    - label: power-rankings-zeta.vercel.app
+      url: https://power-rankings-zeta.vercel.app
+  body: >
+    Results are collected each week from seven competitions, including the
+    AIC, GPS and TAS school leagues, CBSQ tournaments, the U18 SQJBC
+    Premier League and the NBL. Each completed round produces a ranking
+    snapshot, so a team's season can be followed week by week.
+  built:
+    - A rating that weighs win percentage, average margin, strength of schedule and scoring efficiency, with a minimum-games rule so a team isn't ranked on one result.
+    - Collectors for four different sources (JSON APIs plus Puppeteer scraping for box scores), each validated before anything is written.
+    - A round state machine. Completing a round generates rankings, round stats and season snapshots in a single database transaction, so a failure leaves nothing half-written.
+    - Three layers of caching (CDN headers, tagged application caches and pooled connections), tuned to keep hosting and database costs down.
+    - Removing authentication and the admin UI entirely once they became a security liability. Data operations now run as reviewed scripts.
+    - A bug ledger in which every diagnosed defect has a written root cause and a regression test.
+  stack: [Next.js 16, React 19, TypeScript, Prisma 7, PostgreSQL, Tailwind CSS, Vitest, Puppeteer, Vercel]
+  stats:
+    - label: Competitions collected
+      value: "7"
+    - label: Test files
+      value: "260"
+    - label: Database migrations
+      value: "37"
+    - label: Bugs with written root cause
+      value: "78"
+
+- name: Demonwiki
+  summary: The history of the Melbourne Football Club, the world's oldest professional sporting club, online since 2009.
+  links:
+    - label: demonwiki.org
+      url: http://demonwiki.org
+  body: >
+    A Tiki Wiki site drawing on newspapers, books, interviews and personal
+    memories. I run the infrastructure and keep it upgraded, backed up and
+    online.
+  built:
+    - A Python operations toolkit (boto3) for the AWS Lightsail server and MySQL database, covering provisioning, snapshots and health checks.
+    - Database backups to S3 with lifecycle rules that move older copies to cheaper storage tiers and then delete them.
+    - Disaster-recovery runbooks and a documented production baseline.
+    - Diagnosing and fixing a full-site outage (a 100% full root disk behind CloudFront), with the investigation written up.
+  stack: [AWS Lightsail, CloudFront, S3, MySQL, Python, Tiki Wiki]
+  stats:
+    - label: Articles
+      value: "8,350"
+    - label: Images
+      value: "6,200"
+    - label: Online since
+      value: "2009"
