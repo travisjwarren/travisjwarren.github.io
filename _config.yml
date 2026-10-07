@@ -2,8 +2,9 @@
 title: Travis Warren
 role: Full-stack developer
 description: >
-  Travis Warren builds data products for sport, from scrapers and Postgres
-  schemas to the pages people read. TypeScript, Next.js, Postgres, Python.
+  Travis Warren builds data products for sport, from the scrapers that
+  collect the raw data, through the analysis that turns it into insight, to
+  the pages people read. TypeScript, Next.js, Postgres, Python.
 baseurl: ""
 url: "https://travisjwarren.github.io"
 github_username: travisjwarren
