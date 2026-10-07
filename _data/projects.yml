@@ -56,8 +56,8 @@
       value: "7"
     - label: Test files
       value: "260"
-    - label: Database migrations
-      value: "37"
+    - label: Integrity constraints in Postgres
+      value: "66"
     - label: Bugs with written root cause
       value: "78"
 
